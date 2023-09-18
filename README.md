@@ -84,3 +84,24 @@ Compensation from the persistence layer.
 
 ## Delivery
 Please upload your results to a publicly accessible Git repo. Free ones are provided by Github and Bitbucket.
+
+
+=========================================
+Task 1: Added Report endpoint 
+* READ
+    * HTTP Method: GET
+    * URL: localhost:8080/report/{id}
+    * RESPONSE: ReportingStructure
+(Added a graph for checking cycle in direct Reports. Found that employee update wasn't working correctly. Fixed by adding @Id )
+
+Task 2: Added Compensation endpoints and supported DB
+* CREATE
+    * HTTP Method: POST
+    * URL: localhost:8080/compensation
+    * PAYLOAD: Compensation
+    * RESPONSE: Compensation
+
+* READ
+    * HTTP Method: GET
+    * URL: localhost:8080/compensation/{id}
+    * RESPONSE: Compensation

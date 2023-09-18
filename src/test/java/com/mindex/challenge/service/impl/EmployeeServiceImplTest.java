@@ -70,11 +70,16 @@ public class EmployeeServiceImplTest {
         Employee updatedEmployee =
                 restTemplate.exchange(employeeIdUrl,
                         HttpMethod.PUT,
-                        new HttpEntity<Employee>(readEmployee, headers),
+                        new HttpEntity<>(readEmployee, headers),
                         Employee.class,
                         readEmployee.getEmployeeId()).getBody();
 
         assertEmployeeEquivalence(readEmployee, updatedEmployee);
+
+        // This last read makes sure we are updating correctly.
+        // Previous update as creating a list, since EmployeeId was not specified to be unique.
+        Employee updatedReadEmployee = restTemplate.getForEntity(employeeIdUrl, Employee.class, createdEmployee.getEmployeeId()).getBody();
+        assertNotNull(updatedReadEmployee);
     }
 
     private static void assertEmployeeEquivalence(Employee expected, Employee actual) {

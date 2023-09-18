@@ -1,0 +1,39 @@
+[{
+  "employeeId" : "16a596ae-edd3-4847-99fe-c4518e82c86f",
+  "effectiveDate": "2023-09-18",
+  "salary": 100000.00,
+  "employee": {
+    "employeeId" : "16a596ae-edd3-4847-99fe-c4518e82c86f",
+    "firstName" : "John",
+    "lastName" : "Lennon",
+    "position" : "Development Manager",
+    "department" : "Engineering",
+    "directReports" : [
+      {
+        "employeeId" : "b7839309-3348-463b-a7e3-5de1c168beb3"
+      },
+      {
+        "employeeId": "03aa1462-ffa9-4978-901b-7c001562cf6f"
+      }
+    ]
+  }
+},
+  {"effectiveDate": "2022-08-20",
+  "salary": 90000.00,
+  "employeeId" : "16a596ae-edd3-4847-99fe-c4518e82c86f",
+  "employee": {
+    "employeeId" : "16a596ae-edd3-4847-99fe-c4518e82c86f",
+    "firstName" : "John",
+    "lastName" : "Lennon",
+    "position" : "Development Manager",
+    "department" : "Engineering",
+    "directReports" : [
+      {
+        "employeeId" : "b7839309-3348-463b-a7e3-5de1c168beb3"
+      },
+      {
+        "employeeId": "03aa1462-ffa9-4978-901b-7c001562cf6f"
+      }
+    ]
+  }
+}]

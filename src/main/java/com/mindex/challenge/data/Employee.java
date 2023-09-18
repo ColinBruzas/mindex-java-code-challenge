@@ -1,8 +1,13 @@
 package com.mindex.challenge.data;
 
+import org.springframework.data.annotation.Id;
+
 import java.util.List;
 
 public class Employee {
+    // Needed to add Id annotation. Update was saving an additional Employee. Not overwriting the existing.
+    // Read was then returning a list.
+    @Id
     private String employeeId;
     private String firstName;
     private String lastName;
